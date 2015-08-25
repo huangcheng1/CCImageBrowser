@@ -1,0 +1,6 @@
+framework module CCImageBrowser {
+  umbrella header "CCImageBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}

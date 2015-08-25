@@ -1,0 +1,26 @@
+{
+  "name": "CCImageBrowser",
+  "version": "0.1.0",
+  "summary": "A short description of CCImageBrowser.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/CCImageBrowser",
+  "license": "MIT",
+  "authors": {
+    "huangcheng": "huangcheng@souche.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/CCImageBrowser.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "SDWebImage": [
+      "~>3.7"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module Pods_CCImageBrowser_Tests {
+  umbrella header "Pods-CCImageBrowser_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
