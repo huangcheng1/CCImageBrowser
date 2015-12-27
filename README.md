@@ -24,6 +24,35 @@ pod "CCImageBrowser"
 
 huangcheng, huangcheng@souche.com
 
+## Use
+
+初始化
+
+```
+    
+    CCImageBrowser *browser = [[CCImageBrowser alloc]init];
+    browser.delegate = self;
+    browser.imageCount = [self.array count];
+    browser.currentImageIndex = index;
+    
+    self.imageBrowser = browser;
+    UIViewController *controller = [webview fintParentController];
+    [controller presentViewController:self.imageBrowser animated:NO completion:nil];
+```
+
+实现协议
+
+```
+CCImageBrowserDelegate
+- (UIImage *)photoBrowser:(CCImageBrowser *)browser placeholderImageForIndex:(NSInteger)index{
+    return [UIImage imageNamed:CNNAucImage(kAucCarDefaultImage)];
+}
+
+- (NSURL *)photoBrowser:(CCImageBrowser *)browser imageURLForIndex:(NSInteger)index{
+    return [NSURL URLWithString:[self.array objectAtIndex:index]];
+}
+```
+
 ## License
 
 CCImageBrowser is available under the MIT license. See the LICENSE file for more info.
